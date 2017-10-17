@@ -1,0 +1,45 @@
+\documentclass[10pt,a4paper,twocolumn]{jarticle}
+
+\makeatletter
+
+\def\kouenbangou{14} %数字を自分の講演番号に書き換えて下さい．
+
+\def\ps@LAheadings{
+
+\def\@oddhead{}
+\def\@evenhead{}
+\def\@evenfoot{\hfil \kouenbangou\,--\,\thepage\hfill}
+\def\@oddfoot{\hfil \kouenbangou\,--\,\thepage\hfil}
+
+}
+
+\def\ps@LAtitleheadings{
+
+\def\@oddhead{2015年度冬のLAシンポジウム\,[\kouenbangou]\hfil}
+\def\@evenhead{}
+\def\@evenfoot{\hfil \kouenbangou\,--\,\thepage\hfill}
+\def\@oddfoot{\hfil \kouenbangou\,--\,\thepage\hfil}
+
+}
+
+\makeatother
+
+\pagestyle{LAheadings}
+
+\title{講演題目を記入してください}
+\author{著者1\thanks{東京工業大学大学院情報理工学研究科} \and
+著者2\thanks{第1著者に同じ} \and
+著者3\thanks{第１著者に同じ}
+}
+\date{}
+
+\begin{document}
+
+\maketitle\thispagestyle{LAtitleheadings}
+
+%以下に，予稿の本文を記述して下さい．
+
+
+
+
+\end{document}
